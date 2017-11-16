@@ -1,4 +1,3 @@
-ifneq ($(filter msm8916 msm8909,$(TARGET_BOARD_PLATFORM)),)
 ifneq (,$(filter arm aarch64 arm64, $(TARGET_ARCH)))
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
@@ -25,4 +24,3 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Wall -Wno-error
 include $(BUILD_EXECUTABLE)
 endif
-endif # ifneq ($(filter msm8916 msm8909,$(TARGET_BOARD_PLATFORM)),)
